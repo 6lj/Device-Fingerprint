@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Fingerprint </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+        <p class="error-message" id="error-message" style="display: none;">Failed to load data. Please try again later.</p>
+    </div>
+    <div class="container" id="main-content" style="display: none;">
+        <button class="language-toggle" id="language-toggle">العربية</button>
+        <div class="header">
+            <h1 class="main-title">Device Fingerprint </h1>
+            <p class="subtitle">Open this page in browsers or incognito browser to see if it works and the clicks have changed or not.</p>
+        </div>
+        <div class="main-grid">
+            <div class="glass-card">
+                <div id="fingerprint-info">
+                    <p>Loading ...</p>
+                </div>
+                <div class="click-circle" id="click-circle">10</div>
+                <button class="submit-btn" onclick="decrementClick()">Click Here</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
